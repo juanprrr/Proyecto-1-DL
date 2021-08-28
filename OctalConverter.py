@@ -66,3 +66,8 @@ test = OctalConverter(1234)
 print(test.toBinary())
 print(test.toDec())
 print(test.toHex())
+
+test = OctalConverter(4321)
+print(test.toBinary())
+print(test.toDec())
+print(test.toHex())
