@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1550</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="table1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>571</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>8</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>30</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>30</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Palabra de datos (sin paridad)</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Palabra de datos (con paridad)</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>p1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d7</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="table2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>510</y>
+      <width>831</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>8</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>30</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>30</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Palabra de datos recibada</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P4</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>p1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d7</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Prueba de paridad</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bit de paridad</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>1091</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Ingrese número octal:</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>66</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="octalInput"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="conversionTable">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>841</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>75</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>250</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>75</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>Conversión</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Binario</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Decimal</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hexadecimal</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="convertButton">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>50</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Convertir</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>240</y>
+      <width>501</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="parButton">
+         <property name="text">
+          <string>Paridad Par</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="imparButton">
+         <property name="text">
+          <string>Paridad Impar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="hammingButton">
+       <property name="text">
+        <string>Hamming</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
