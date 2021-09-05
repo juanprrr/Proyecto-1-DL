@@ -67,6 +67,7 @@ def calcParidad(hamming, paridad):
 
 def comprobar(hamming, paridad):
     global tabla_hamming
+    tabla_paridad = []
     n = 0
     pos = (2 ** n) - 1
     eval = 0
@@ -79,13 +80,19 @@ def comprobar(hamming, paridad):
             if eval >= 2 ** n:
                 eval = 0
                 pos = pos + 2 ** n
+                cont = 0
+                while cont < 2 ** n:
+                    tabla_paridad.append("_")
+                    cont = cont + 1
             elif hamming[pos] == "0":
                 pos = pos + 1
                 eval = eval + 1
+                tabla_paridad.append("0")
             elif hamming[pos] == "1":
                 pos = pos + 1
                 eval = eval + 1
                 cont_unos = cont_unos + 1
+                tabla_paridad.append("1")
         if cont_unos % 2 == 0:
             if paridad == "par":
                 calc_paridades = calc_paridades + "0"
@@ -102,7 +109,10 @@ def comprobar(hamming, paridad):
         pos = 2 ** n - 1
         cont_unos = 0
         eval = 0
+        tabla_hamming.append(tabla_paridad)
+        tabla_paridad = []
     print(calc_paridades)
+    print(tabla_hamming)
     return calc_paridades
 
 
