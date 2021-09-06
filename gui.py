@@ -16,10 +16,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.convertButton.clicked.connect(self.convert)
         self.hammingButton.clicked.connect(self.hamBut)
         self.compararButton.clicked.connect(self.comparar)
+        self.hammingButton.setEnabled(False)
+        self.compararButton.setEnabled(False)
         self.show()
 
     def comparar(self):
-        
         conthr = 0
         for j in str(self.compararInput.text()):
             self.table2.setItem(0, conthr, QtWidgets.QTableWidgetItem(j))
@@ -67,10 +68,15 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def convert(self):
         conv = OctalConverter.OctalConverter(int(self.octalInput.text()))
-        self.conversionTable.setItem(0,0,QtWidgets.QTableWidgetItem(conv.toBinary()))
-        self.conversionTable.setItem(0,1,QtWidgets.QTableWidgetItem(conv.toDec()))
-        self.conversionTable.setItem(0,2,QtWidgets.QTableWidgetItem(conv.toHex()))
-        nzri = testmatplot.NZRI([int(i) for i in conv.toBinary()])
+        if conv.isValid(conv.data) == False:
+            QMessageBox.about(self, "Warning", "Ingrese un valor de base octal válido")
+            
+        else:
+            self.conversionTable.setItem(0,0,QtWidgets.QTableWidgetItem(conv.toBinary()))
+            self.conversionTable.setItem(0,1,QtWidgets.QTableWidgetItem(conv.toDec()))
+            self.conversionTable.setItem(0,2,QtWidgets.QTableWidgetItem(conv.toHex()))
+            nzri = testmatplot.NZRI([int(i) for i in conv.toBinary()])
+            self.hammingButton.setEnabled(True)
     
     def hamBut(self):
         a = hamming.Hamming()
@@ -123,6 +129,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 conthp += 1
 
         self.hammingCurrent = a
+        self.compararButton.setEnabled(True)
 
             
 

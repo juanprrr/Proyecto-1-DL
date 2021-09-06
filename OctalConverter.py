@@ -50,20 +50,28 @@ class OctalConverter:
         return result
 
     def isValid(self, data):
-        ref = data        
+        ref = data
+        count = self.count        
         while ref != 0:
-            if self.count >= 4 :
+            if count >= 4 :
                 return False
             elif ref%10 > 7:
                 print(ref%10)
                 return False
             else:
-                self.count += 1
+                count += 1
                 return self.isValid(ref//10)   
         return True
-'''
-test = OctalConverter(9234)
-print(test.toBinary())
-print(test.toDec())
-print(test.toHex())
-'''
+
+test = OctalConverter(95595)
+if test.isValid:
+    print("true")
+else:
+    print("false")
+
+if test.isValid:
+    print("true")
+else:
+    print("false")
+
+
