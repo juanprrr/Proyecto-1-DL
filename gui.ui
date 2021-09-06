@@ -55,11 +55,6 @@
     </attribute>
     <row>
      <property name="text">
-      <string/>
-     </property>
-    </row>
-    <row>
-     <property name="text">
       <string>Palabra de datos (sin paridad)</string>
      </property>
     </row>
@@ -70,17 +65,22 @@
     </row>
     <row>
      <property name="text">
-      <string>New Row</string>
-     </property>
-    </row>
-    <row>
-     <property name="text">
       <string>P2</string>
      </property>
     </row>
     <row>
      <property name="text">
+      <string>P3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
       <string>P4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P5</string>
      </property>
     </row>
     <row>
@@ -120,11 +120,6 @@
     </column>
     <column>
      <property name="text">
-      <string>d3</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>d4</string>
      </property>
     </column>
@@ -140,7 +135,42 @@
     </column>
     <column>
      <property name="text">
+      <string>d6</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
       <string>d7</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d8</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d9</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d10</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d11</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d12</string>
      </property>
     </column>
    </widget>
@@ -150,7 +180,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>630</x>
+      <x>610</x>
       <y>510</y>
       <width>831</width>
       <height>231</height>
@@ -185,11 +215,6 @@
     </attribute>
     <row>
      <property name="text">
-      <string/>
-     </property>
-    </row>
-    <row>
-     <property name="text">
       <string>Palabra de datos recibada</string>
      </property>
     </row>
@@ -211,6 +236,11 @@
     <row>
      <property name="text">
       <string>P4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>P5</string>
      </property>
     </row>
     <column>
@@ -245,11 +275,6 @@
     </column>
     <column>
      <property name="text">
-      <string>d3</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>d4</string>
      </property>
     </column>
@@ -265,7 +290,42 @@
     </column>
     <column>
      <property name="text">
+      <string>d6</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
       <string>d7</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d8</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d9</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d10</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d11</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>p5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>d12</string>
      </property>
     </column>
     <column>
@@ -404,6 +464,35 @@
       <widget class="QPushButton" name="hammingButton">
        <property name="text">
         <string>Hamming</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>360</y>
+      <width>591</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ingresar valor binario para comparar    </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="compararInput"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="compararButton">
+       <property name="text">
+        <string>Comparar</string>
        </property>
       </widget>
      </item>

@@ -11,7 +11,7 @@ class NZRI:
         self.t = 0.5 * np.arange(len(self.data))
 
         self.my_lines('x', range(len(self.bits)), color='.5', linewidth=2)
-        self.my_lines('y', [0], color='.5', linewidth=2)
+        self.my_lines('y', [0.5], color='.5', linewidth=2)
 
         plt.step(range(len(self.bits)+1), self.nzri + [self.nzri[-1]], 'r', linewidth = 2, where='post')
         plt.ylim([-2,2])
@@ -45,7 +45,7 @@ class NZRI:
             for p in pos:
                 plt.axhline(p, *args, **kwargs)
                 
-a = NZRI([1])
+#a = NZRI([1,0,1,1,0])
                 
 
 

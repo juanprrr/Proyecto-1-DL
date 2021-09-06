@@ -38,10 +38,10 @@ class OctalConverter:
             dec = bin%10 * 2 **exp + dec
             exp += 1
             bin //= 10
-        return dec
+        return str(dec)
     
     def toHex(self):
-        dec = self.toDec()
+        dec = int(self.toDec())
         digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A' , 'B', 'C', 'D', 'E', 'F']
         result = ""
         while dec != 0:
@@ -61,13 +61,9 @@ class OctalConverter:
                 self.count += 1
                 return self.isValid(ref//10)   
         return True
-
-test = OctalConverter(1234)
+'''
+test = OctalConverter(9234)
 print(test.toBinary())
 print(test.toDec())
 print(test.toHex())
-
-test = OctalConverter(4321)
-print(test.toBinary())
-print(test.toDec())
-print(test.toHex())
+'''
