@@ -16,6 +16,7 @@ class OctalConverter:
         self.data = data
         self.count = 0
         self.result = ""
+        self.valid = self.isValid(data)
     
     def toBinary(self):
         digits = [[0, "000"], [1, "001"], [2, "010"], [3, "011"], [4, "100"], [5, "101"], [6, "110"], [7, "111"]]
@@ -50,28 +51,28 @@ class OctalConverter:
         return result
 
     def isValid(self, data):
-        ref = data
-        count = self.count        
+        ref = data      
         while ref != 0:
-            if count >= 4 :
-                return False
-            elif ref%10 > 7:
-                print(ref%10)
-                return False
+            if ref%10 <= 7 :
+                if self.count >= 4:
+                    print(self.count)
+                    self.count = 0
+                    return False
+                else:
+                    self.count += 1
+                    print(self.count)
+                    return self.isValid(ref//10)
             else:
-                count += 1
-                return self.isValid(ref//10)   
+                self.count = 0
+                return False
+        self.count = 0
         return True
+    
 
-test = OctalConverter(95595)
-if test.isValid:
-    print("true")
-else:
-    print("false")
-
-if test.isValid:
-    print("true")
-else:
-    print("false")
-
-
+'''
+test = OctalConverter(7354)
+test.isValid(55641)
+print(test.valid)
+test.isValid(1234)
+print(test.valid)
+'''

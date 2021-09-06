@@ -68,7 +68,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def convert(self):
         conv = OctalConverter.OctalConverter(int(self.octalInput.text()))
-        if conv.isValid(conv.data) == False:
+        print(int(self.octalInput.text()))
+        conv.toBinary()
+        
+        if conv.valid == False:
             QMessageBox.about(self, "Warning", "Ingrese un valor de base octal válido")
             
         else:
